@@ -1,12 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://dev.mavo.io/dist/mavo.css"/>
+    <link rel="stylesheet" href="main.css"/>
+    <script src="https://get.mavo.io/mavo.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">    
     <title>Document</title>
 </head>
-<body>
-    This is the main real app page. 
+
+<body mv-app="tasks" mv-storage="https://github.com/alchemy-lab-code-101/open-art-studio">
+    <header>
+
+    </header>
+    <main>
+        <h1>Book open time in our studio</h1>
+        <p><em>Come spend some time in our free studio space! Book your time and equpiment needed below. </em></p>
+        <section property="days" mv-multiple>
+            <h2 class="weekday">[day]</h2>
+            <div class="select-element" property="hours" mv-multiple>
+                <span property="hour" class="hours"></span>
+                <div class="sign-up">
+                    <div class="contact-info">
+                        Name:<span property="Name">Name</span>
+                        Email:<span property="Email">Email</span>
+                    </div>
+                    <div>
+                        <label><input property="Kiln" type="checkbox">Kiln</label>
+                        <label><input property="Paint" type="checkbox">Paint</label>
+                        <label><input property="Table" type="checkbox">Table</label>
+                        <label><input property="Electric" type="checkbox">Electric</label>
+                        <label><input property="Clay" type="checkbox">Clay</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+
+    </footer>
+    <pre id="data">{
+        "days":[
+            {"day":"Monday","hours":[
+                {"hour":8,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false},
+                {"hour":9,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false},
+                {"hour":10,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false},
+                {"hour":11,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false},
+                {"hour":12,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false},
+                {"hour":1,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false},
+                {"hour":2,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false},
+                {"hour":3,"Name":"","Email":"","Kiln":false, "Paint":false, "Table":false, "Electric":false, "Clay":false}
+                
+            
+            ]}        
+        ]
+    }</pre>
 </body>
+
 </html>
